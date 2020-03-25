@@ -1,0 +1,42 @@
+{
+	"light": {
+		"normal_control": {
+			"status":"off",
+			"turn_off_at": {
+				"hour": "13",
+				"minutes": "30"
+			},
+			"turn_on_at": {
+				"hour": "12",
+				"minutes": "30"
+			}
+		},
+		"interval_control": {
+			"status":"off",
+			"run_time":{"hour":"14",
+						"minutes":"12"
+						},
+			"duration_in_sec":"10"
+		}
+	},
+	"water_pump":{
+		"normal_control": {
+			"status":"off",
+			"turn_off_at": {
+				"hour": "13",
+				"minutes": "30"
+			},
+			"turn_on_at": {
+				"hour": "12",
+				"minutes": "30"
+			}
+		},
+		"interval_control": {
+			"status":"off",
+			"run_time":{"hour":"14",
+						"minutes":"12"
+						},
+			"duration_in_sec":"10"
+		}
+	}
+}

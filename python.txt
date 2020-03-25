@@ -1,0 +1,14 @@
+
+
+
+//// gpio listener callback , listen to every change 
+// add event listener 
+//self.pin -> the pin to listen for every change
+/// GPIO.BOTH -> to test for 0 and 1 
+/// bouncetime -> test every 300 milisec
+GPIO.add_event_detect(self.pin, GPIO.BOTH, bouncetime=300)  # let us know when the pin goes HIGH or LOW
+
+// what to do on run call back 
+//self.pin-> the pin that make the change 
+// -> callback the function that will run 
+GPIO.add_event_callback(self.pin, callback)  # assign function to GPIO PIN, Run function on change

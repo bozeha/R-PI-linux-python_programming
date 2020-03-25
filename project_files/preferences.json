@@ -1,0 +1,32 @@
+{
+	"e0": {
+		"name":"light",
+		"port":6,
+		"direction":"OUT",
+		"schedule_control": {
+			"status":"true",
+			"been_activated":false,
+			"turn_on_at": {
+				"hour": "01",
+				"minutes": "00"
+			},
+			"turn_off_at": {
+				"hour": "02",
+				"minutes": "02"
+			}
+		}
+	},
+	"e1":{
+		"name":"water_pump",
+		"port":6,
+		"direction":"OUT",
+		"interval_control": {
+			"status":"true",
+			"been_activated":false,
+			"run_time":{"hour":"01",
+						"minutes":"50"
+						},
+			"duration_in_sec":"10"
+		}
+	}
+}

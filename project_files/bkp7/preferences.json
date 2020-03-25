@@ -1,0 +1,46 @@
+{
+	"light": {
+		"schedule_control": {
+			"status":"true",
+			"schedules_in_day":1,
+			"turn_off_at": {
+				"hour": "03",
+				"minutes": "00"
+			},
+			"turn_on_at": {
+				"hour": "01",
+				"minutes": "00"
+			}
+		},
+		"interval_control": {
+			"status":"false",
+			"intervals_in_day":1,
+			"run_time":{"hour":"01",
+						"minutes":"12"
+						},
+			"duration_in_sec":"10"
+		}
+	},
+	"water_pump":{
+		"schedule_control": {
+			"status":"false",
+			"schedules_in_day":1,
+			"turn_off_at": {
+				"hour": "13",
+				"minutes": "30"
+			},
+			"turn_on_at": {
+				"hour": "12",
+				"minutes": "30"
+			}
+		},
+		"interval_control": {
+			"status":"true",
+			"intervals_in_day":1,
+			"run_time":{"hour":"01",
+						"minutes":"58"
+						},
+			"duration_in_sec":"10"
+		}
+	}
+}

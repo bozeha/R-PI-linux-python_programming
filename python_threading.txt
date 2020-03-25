@@ -1,0 +1,20 @@
+import threading
+import time
+
+
+
+def startTest(seconds):
+	print("start")
+	time.sleep(seconds)
+	print("ends")
+	
+
+	
+print("befure calls the test ")
+seconds = 10 
+#create thread, the target is the function , and args its what we send to the function
+newThread = threading.Thread(target = startTest, args=(seconds, ))
+#now we start the thread 
+newThread.start()
+
+print("after calls the test ")

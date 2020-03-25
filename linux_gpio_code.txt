@@ -1,0 +1,54 @@
+
+
+//// first install gpio 
+
+************Method 1
+
+// update linux
+sudo apt-get update
+
+// install gpio pack 
+sudo apt-get install rpi.gpio
+
+
+************Method 2 
+//Step 1 – Download the library
+wget https://pypi.python.org/packages/source/R/RPi.GPIO/RPi.GPIO-0.5.11.tar.gz
+//Step 2 – Extract the archive to a new folder
+tar -xvf RPi.GPIO-0.5.11.tar.gz
+//Step 3 – Browse to the new directory
+cd RPi.GPIO-0.5.11
+//Step 4 – Install the library
+sudo python setup.py install
+//Step 5 – Remove the directory and archive file
+cd ~
+sudo rm -rf RPi.GPIO-0.*
+
+
+
+/// end 
+
+//// see all gpio ports
+
+gpio readall 
+//** you can see attchd pic 
+* in red its the port number 
+* in blue it the mode of the port in/out 
+* in green show if its on/off 0/1
+
+//exmple chage mode from in to out 
+
+// gpio -g mode <port number> out
+gpio -g mode 6 out
+
+// exmple chage from value 0 to 1 
+
+// gpio -g write <port number> 1
+
+gpio -g write 6 1
+
+
+
+
+
+

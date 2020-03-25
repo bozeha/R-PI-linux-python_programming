@@ -1,0 +1,33 @@
+
+
+sudo apt-get update
+sudo apt-get install vsftpd
+
+
+/// go to config file 
+sudo nano /etc/vsftpd.conf
+
+/// look for every on of this and remove the comment sign # 
+// if one of this lines not exist add it  
+
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+local_umask=022
+chroot_local_user=YES
+user_sub_token=$USER
+local_root=/home/$USER/FTP
+allow_writeable_chroot=YES
+
+/// create folder for the ftp files * replase <user> with the user name we will log in with
+mkdir /home/<user>/FTP
+mkdir /home/<user>/FTP/files
+chmod a-w /home/<user>/FTP
+
+
+/// restart service and we ready to go 
+sudo service vsftpd restart
+
+
+
+
